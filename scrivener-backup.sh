@@ -1,7 +1,9 @@
 TITLE=SprintingInPlace
-NOW=`date "+%Y%m%d-%H%M%S"`
-SOURCE=~/Dropbox/Apps/Scrivener/$TITLE.scriv
+SOURCE_DIR=~/Dropbox/Apps/Scrivener
 TARGET_DIR=~/ScrivenerBackups
+
+NOW=`date "+%Y%m%d-%H%M%S"`
+SOURCE=$SOURCE_DIR/$TITLE.scriv
 TARGET=$TARGET_DIR/$TITLE-$NOW.scriv
 
 echo Copying $SOURCE to $TARGET
